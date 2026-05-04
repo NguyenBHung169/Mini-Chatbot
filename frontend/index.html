@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Chatbot Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="auth-panel" id="authPanel">
+        <div>
+          <p class="eyebrow">Firebase Authentication</p>
+          <h1>Mini Chatbot Lab</h1>
+        </div>
+        <form id="authForm" class="auth-form">
+          <input id="email" type="email" placeholder="Email" autocomplete="email" required />
+          <input id="password" type="password" placeholder="Password" autocomplete="current-password" required minlength="6" />
+          <div class="actions">
+            <button type="button" id="loginBtn">Dang nhap</button>
+            <button type="button" id="registerBtn" class="secondary">Dang ky</button>
+          </div>
+        </form>
+        <p id="authMessage" class="message"></p>
+      </section>
+
+      <section class="chat-panel hidden" id="chatPanel">
+        <header class="chat-header">
+          <div>
+            <p class="eyebrow">Dang nhap voi</p>
+            <h2 id="userEmail">Nguoi dung</h2>
+          </div>
+          <button id="logoutBtn" class="secondary">Dang xuat</button>
+        </header>
+
+        <div id="messages" class="messages"></div>
+
+        <form id="chatForm" class="chat-form">
+          <input id="chatInput" type="text" placeholder="Nhap tin nhan..." required maxlength="1000" />
+          <button type="submit">Gui</button>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
