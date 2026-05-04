@@ -1,4 +1,7 @@
-﻿# Mini Chatbot Lab
+# HoTen : Nguyen Bao hung
+# MSSV : 24120057
+Video demo : https://drive.google.com/file/d/16PHHDsXMlx7xhHsxfIb1jY82beCrYfBO/view?usp=sharing
+ # Mini Chatbot Lab
 
 Ung dung nho gom frontend va backend rieng biet, co Firebase Authentication va luu lich su chat vao SQLite.
 
